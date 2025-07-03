@@ -1,2 +1,2 @@
-# yyyoink-log
-application:Compression, Binary, and LLM Toolkit Logging
+# blue-core
+application:Log Management and Analytics Core
