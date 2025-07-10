@@ -1,9 +1,9 @@
 # Custom Prompt
-export PS1="\n\[\e[1;32m\][devshell](yyyoink-log) \w\n❯ \[\e[0m\]"
+export PS1="\n\[\e[1;32m\][devshell](blue-core) \w\n❯ \[\e[0m\]"
 
 # Aliases
-alias docker-build-dev="docker build -t yyyoink-log:dev ."
-alias docker-run-dev="docker run --rm yyyoink-log:dev"
+alias docker-build-dev="docker build -t blue-core:dev ."
+alias docker-run-dev="docker run --rm blue-core:dev"
 alias nv="nvim"
 alias glr="pretty_git_log"
 alias gs="git status"

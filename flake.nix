@@ -1,5 +1,5 @@
 {
-  description = "yyyoink-log";
+  description = "blue-core";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/release-24.11";
@@ -17,7 +17,7 @@
   }:
     flake-utils.lib.eachDefaultSystem (
       system: let
-        pname = "yyyoink-log";
+        pname = "blue-core";
 
         pkgs = import nixpkgs {
           inherit system;

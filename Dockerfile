@@ -22,5 +22,5 @@ WORKDIR /bin
 
 # Copy /nix/store
 COPY --from=builder /tmp/nix-store-closure /nix/store
-COPY --from=builder /tmp/build/result /yyyoink-log
-CMD ["/yyyoink-log/bin/yyyoink-log"]
+COPY --from=builder /tmp/build/result /blue-core
+CMD ["/blue-core/bin/blue-core"]

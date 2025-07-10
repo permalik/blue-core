@@ -1,3 +1,3 @@
 fn main() {
-	print!("started yyyoink-log..");
+    print!("started blue-core..");
 }
