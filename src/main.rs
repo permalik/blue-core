@@ -1,5 +1,5 @@
 use axum::{Router, extract::Json, routing::post};
-use serde::Deserialize;
+use blue_rust::RawLog;
 
 #[tokio::main]
 async fn main() {
@@ -11,12 +11,6 @@ async fn main() {
 
 async fn ingest(Json(payload): Json<Vec<RawLog>>) {
     for log in payload {
-        println!("Received log: {:?}", log);
+        println!("Received log: {:?}\nService: {:?}\n Content: {:?}\n\n", log.msg_id, log.service, log.content);
     }
-}
-
-#[derive(Debug, Deserialize)]
-struct RawLog {
-    msg_id: String,
-    content: String,
 }
