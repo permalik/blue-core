@@ -21,4 +21,6 @@ debug
 #.idea/
 
 # Nix
+.idea/
 /result
+**/logs/*.log
